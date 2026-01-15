@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Location Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌍 My Location Info</h1>
+
+        <button id="btnLocation">Get My Location</button>
+
+        <div id="loader" class="loader hidden">Fetching data...</div>
+
+        <div id="countryCard" class="card hidden">
+            <img id="flag" src="" alt="Flag">
+
+            <h2 id="countryName"></h2>
+            <p><strong>Capital:</strong> <span id="capital"></span></p>
+            <p><strong>Region:</strong> <span id="region"></span></p>
+            <p><strong>Population:</strong> <span id="population"></span></p>
+
+            <h3>Border Countries</h3>
+            <div id="borders" class="borders"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
